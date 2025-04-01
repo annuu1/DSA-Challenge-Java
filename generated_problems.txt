@@ -1,3 +1,4 @@
 OptimalDeliveryRoute
 EfficientWordCounting
 LongestSubsequenceWithUniqueCharacters
+MaximalPairwiseProductWithConstraints
