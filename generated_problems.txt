@@ -6,3 +6,4 @@ MinimalRemovalsForSortedSubsequence
 MostFrequentSubarraySum
 LargestSumSubmatrixWithConstraints
 MinimumOperationsToReachTargetSum
+MaximalContiguousSubsequenceProduct
