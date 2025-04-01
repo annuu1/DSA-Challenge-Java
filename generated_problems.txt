@@ -5,3 +5,4 @@ MaximalPairwiseProductWithConstraints
 MinimalRemovalsForSortedSubsequence
 MostFrequentSubarraySum
 LargestSumSubmatrixWithConstraints
+MinimumOperationsToReachTargetSum
