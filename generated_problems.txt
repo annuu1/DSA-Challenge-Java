@@ -11,3 +11,4 @@ OptimalResourceAllocation
 MostEfficientPathThroughMatrix
 MinimumSwapsToGroupIdenticalElements
 MaximizeAlternatingSumOfSubsequences
+MaxSumNonOverlappingSubarrays
