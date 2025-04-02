@@ -10,3 +10,4 @@ MaximalContiguousSubsequenceProduct
 OptimalResourceAllocation
 MostEfficientPathThroughMatrix
 MinimumSwapsToGroupIdenticalElements
+MaximizeAlternatingSumOfSubsequences
