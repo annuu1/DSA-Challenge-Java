@@ -13,3 +13,4 @@ MinimumSwapsToGroupIdenticalElements
 MaximizeAlternatingSumOfSubsequences
 MaxSumNonOverlappingSubarrays
 OptimalMeetingScheduling
+MinCostToFormPalindrome
