@@ -14,3 +14,4 @@ MaximizeAlternatingSumOfSubsequences
 MaxSumNonOverlappingSubarrays
 OptimalMeetingScheduling
 MinCostToFormPalindrome
+OptimalTaskSchedulingWithDependencies
