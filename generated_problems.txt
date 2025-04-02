@@ -12,3 +12,4 @@ MostEfficientPathThroughMatrix
 MinimumSwapsToGroupIdenticalElements
 MaximizeAlternatingSumOfSubsequences
 MaxSumNonOverlappingSubarrays
+OptimalMeetingScheduling
