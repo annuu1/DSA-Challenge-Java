@@ -16,3 +16,4 @@ OptimalMeetingScheduling
 MinCostToFormPalindrome
 OptimalTaskSchedulingWithDependencies
 MinCostToConnectAllCitiesWithUniqueEdges
+MaximizeConsecutiveSequenceSum
