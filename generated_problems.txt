@@ -17,3 +17,4 @@ MinCostToFormPalindrome
 OptimalTaskSchedulingWithDependencies
 MinCostToConnectAllCitiesWithUniqueEdges
 MaximizeConsecutiveSequenceSum
+MinInsertionsForSortedSequence
