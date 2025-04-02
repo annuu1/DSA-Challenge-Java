@@ -8,3 +8,4 @@ LargestSumSubmatrixWithConstraints
 MinimumOperationsToReachTargetSum
 MaximalContiguousSubsequenceProduct
 OptimalResourceAllocation
+MostEfficientPathThroughMatrix
