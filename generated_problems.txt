@@ -9,3 +9,4 @@ MinimumOperationsToReachTargetSum
 MaximalContiguousSubsequenceProduct
 OptimalResourceAllocation
 MostEfficientPathThroughMatrix
+MinimumSwapsToGroupIdenticalElements
