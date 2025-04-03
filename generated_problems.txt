@@ -21,3 +21,4 @@ MinInsertionsForSortedSequence
 MaximizeProfitFromStockTransactionsWithCooldown
 MaximalIncreasingSubsequenceProduct
 OptimalResourceAllocationWithVaryingCosts
+OptimalWarehousePlacement
