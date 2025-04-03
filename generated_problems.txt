@@ -26,3 +26,4 @@ UnknownProblem
 MinimumDeletionsForIncreasingSubsequenceWithKGroups
 MaximizeContiguousSubarraySumWithModulo
 OptimalSubtreeSumPartition
+MaximizeTotalDifferenceInCircularArray
