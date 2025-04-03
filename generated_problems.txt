@@ -22,3 +22,4 @@ MaximizeProfitFromStockTransactionsWithCooldown
 MaximalIncreasingSubsequenceProduct
 OptimalResourceAllocationWithVaryingCosts
 OptimalWarehousePlacement
+UnknownProblem
