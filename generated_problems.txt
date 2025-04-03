@@ -25,3 +25,4 @@ OptimalWarehousePlacement
 UnknownProblem
 MinimumDeletionsForIncreasingSubsequenceWithKGroups
 MaximizeContiguousSubarraySumWithModulo
+OptimalSubtreeSumPartition
