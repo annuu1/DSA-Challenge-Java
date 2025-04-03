@@ -27,3 +27,4 @@ MinimumDeletionsForIncreasingSubsequenceWithKGroups
 MaximizeContiguousSubarraySumWithModulo
 OptimalSubtreeSumPartition
 MaximizeTotalDifferenceInCircularArray
+OptimalLibraryBookSelection
