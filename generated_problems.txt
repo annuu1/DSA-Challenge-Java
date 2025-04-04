@@ -31,3 +31,4 @@ OptimalLibraryBookSelection
 OptimalTrainScheduling
 MaximizeCircularSubarraySum
 MinimumCostToPartitionArrayIntoKSubarraysWithEqualSum
+MinimumJumpsToReachEndWithVariableJumpLengths
