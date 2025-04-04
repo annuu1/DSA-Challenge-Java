@@ -30,3 +30,4 @@ MaximizeTotalDifferenceInCircularArray
 OptimalLibraryBookSelection
 OptimalTrainScheduling
 MaximizeCircularSubarraySum
+MinimumCostToPartitionArrayIntoKSubarraysWithEqualSum
