@@ -29,3 +29,4 @@ OptimalSubtreeSumPartition
 MaximizeTotalDifferenceInCircularArray
 OptimalLibraryBookSelection
 OptimalTrainScheduling
+MaximizeCircularSubarraySum
