@@ -28,3 +28,4 @@ MaximizeContiguousSubarraySumWithModulo
 OptimalSubtreeSumPartition
 MaximizeTotalDifferenceInCircularArray
 OptimalLibraryBookSelection
+OptimalTrainScheduling
