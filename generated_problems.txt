@@ -47,3 +47,4 @@ OptimalResourceAllocationWithDependenciesAndCosts
 OptimalIslandGrouping
 OptimalMeetingRoomAllocation
 OptimalPathInWeightedGraphWithObstacles
+OptimalTrainCarCoupling
