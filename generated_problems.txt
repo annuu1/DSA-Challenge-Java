@@ -45,3 +45,4 @@ OptimalResourceAllocationWithVariablePriorities
 OptimalParcelGrouping
 OptimalResourceAllocationWithDependenciesAndCosts
 OptimalIslandGrouping
+OptimalMeetingRoomAllocation
