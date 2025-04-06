@@ -56,3 +56,4 @@ OptimalInterleavedSubsequence
 OptimalPathThroughDynamicGrid
 OptimalPlaylistGeneration
 OptimalTeamFormationWithSkillConstraints
+OptimalPowerGridDesign
