@@ -54,3 +54,4 @@ OptimalClassroomAssignment
 OptimalTrainFormationWithConstraints
 OptimalInterleavedSubsequence
 OptimalPathThroughDynamicGrid
+OptimalPlaylistGeneration
