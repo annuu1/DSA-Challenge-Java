@@ -49,3 +49,4 @@ OptimalMeetingRoomAllocation
 OptimalPathInWeightedGraphWithObstacles
 OptimalTrainCarCoupling
 OptimalBuildingConstructionSequencing
+OptimalLibraryShelfArrangement
