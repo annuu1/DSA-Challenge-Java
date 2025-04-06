@@ -50,3 +50,4 @@ OptimalPathInWeightedGraphWithObstacles
 OptimalTrainCarCoupling
 OptimalBuildingConstructionSequencing
 OptimalLibraryShelfArrangement
+OptimalClassroomAssignment
