@@ -52,3 +52,4 @@ OptimalBuildingConstructionSequencing
 OptimalLibraryShelfArrangement
 OptimalClassroomAssignment
 OptimalTrainFormationWithConstraints
+OptimalInterleavedSubsequence
