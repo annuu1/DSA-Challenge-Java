@@ -57,3 +57,4 @@ OptimalPathThroughDynamicGrid
 OptimalPlaylistGeneration
 OptimalTeamFormationWithSkillConstraints
 OptimalPowerGridDesign
+OptimalRouteWithLimitedFuelStops
