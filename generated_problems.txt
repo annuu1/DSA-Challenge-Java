@@ -51,3 +51,4 @@ OptimalTrainCarCoupling
 OptimalBuildingConstructionSequencing
 OptimalLibraryShelfArrangement
 OptimalClassroomAssignment
+OptimalTrainFormationWithConstraints
