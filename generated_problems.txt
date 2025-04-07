@@ -63,3 +63,4 @@ OptimalTowerConstruction
 OptimalStadiumSeatingArrangement
 OptimalSubarrayGroupingWithMinMaxDifference
 OptimalConvoyFormation
+OptimalTaskAssignmentWithDependenciesAndDeadlines
