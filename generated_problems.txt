@@ -61,3 +61,4 @@ OptimalRouteWithLimitedFuelStops
 OptimalCargoUnloadingWithConstraints
 OptimalTowerConstruction
 OptimalStadiumSeatingArrangement
+OptimalSubarrayGroupingWithMinMaxDifference
