@@ -59,3 +59,4 @@ OptimalTeamFormationWithSkillConstraints
 OptimalPowerGridDesign
 OptimalRouteWithLimitedFuelStops
 OptimalCargoUnloadingWithConstraints
+OptimalTowerConstruction
