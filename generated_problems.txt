@@ -58,3 +58,4 @@ OptimalPlaylistGeneration
 OptimalTeamFormationWithSkillConstraints
 OptimalPowerGridDesign
 OptimalRouteWithLimitedFuelStops
+OptimalCargoUnloadingWithConstraints
