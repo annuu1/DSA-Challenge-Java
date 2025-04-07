@@ -1,63 +1,131 @@
 import java.util.Arrays;
 
-public class  OptimalTrainFormation {
+/**
+ * Problem Name: OptimalUniversityCourseScheduling
+ *
+ * Problem Description:
+ * A university wants to schedule courses for the next semester.  Each course has a duration (in hours) and a list of prerequisites (other courses that must be completed before it can be taken).  The goal is to schedule the courses in a way that minimizes the total time spent in lectures (sum of durations of all courses), while respecting the prerequisites.  Courses can run concurrently, but a course cannot start until all its prerequisites are completed.
+ *
+ * Input: A list of courses, where each course is represented by a Course object containing its name, duration, and a list of prerequisite course names.
+ * Output: The minimum total duration of the schedule and a list of the courses in an optimal schedule order.
+ */
+class OptimalUniversityCourseScheduling {
 
-    /**
-     * Problem: Optimal Train Formation
-     *
-     * You are given an array of train cars, each represented by its weight.  You need to form a train by connecting these cars.
-     * However, there's a constraint: adjacent cars cannot have weights that differ by more than a specified threshold.
-     * Find the maximum length train you can form, adhering to the weight difference constraint.
-     *
-     * Example:
-     * weights = [10, 12, 15, 14, 16, 20, 18] , threshold = 2
-     * Output: 4 (e.g., [10, 12, 14, 16] or [14, 15, 16, 18] )
-     *
-     * weights = [5, 10, 15, 20, 25], threshold = 1
-     * Output: 1
-     */
+    static class Course {
+        String name;
+        int duration;
+        String[] prerequisites;
 
-    public static int maxLengthTrain(int[] weights, int threshold) {
-        if (weights == null || weights.length == 0) return 0;
-        Arrays.sort(weights); //Sorting simplifies finding valid sequences
-        int maxLength = 1;
-        int currentLength = 1;
+        Course(String name, int duration, String[] prerequisites) {
+            this.name = name;
+            this.duration = duration;
+            this.prerequisites = prerequisites;
+        }
+    }
 
-        for (int i = 1; i < weights.length; i++) {
-            if (weights[i] - weights[i - 1] <= threshold) {
-                currentLength++;
-            } else {
-                maxLength = Math.max(maxLength, currentLength);
-                currentLength = 1;
+    public static int[] solve(Course[] courses) {
+        // Create a graph representing course dependencies
+        Graph graph = new Graph(courses.length);
+        for (int i = 0; i < courses.length; i++) {
+            for (String pre : courses[i].prerequisites) {
+                int preIndex = findCourseIndex(courses, pre);
+                if (preIndex != -1) {
+                    graph.addEdge(preIndex, i);
+                }
             }
         }
-        maxLength = Math.max(maxLength, currentLength); //handle the last sequence
-        return maxLength;
+
+
+        //Topological sort to find a valid order
+        int[] order = graph.topologicalSort();
+        if (order == null) {
+            System.out.println("Cycle detected in course prerequisites!"); //Handle cyclic dependencies
+            return null;
+        }
+
+        //Calculate total duration
+        int totalDuration = 0;
+        for (int i : order) {
+            totalDuration += courses[i].duration;
+        }
+
+        return new int[] {totalDuration, Arrays.toString(order).hashCode()}; //Returning hashcode for uniqueness of order
+
+    }
+
+    private static int findCourseIndex(Course[] courses, String courseName) {
+        for (int i = 0; i < courses.length; i++) {
+            if (courses[i].name.equals(courseName)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
+    // Simple graph implementation using adjacency list
+    static class Graph {
+        int V;
+        java.util.List<Integer>[] adj;
+
+        Graph(int v) {
+            V = v;
+            adj = new java.util.ArrayList[v];
+            for (int i = 0; i < v; ++i)
+                adj[i] = new java.util.ArrayList<>();
+        }
+
+        void addEdge(int v, int w) {
+            adj[v].add(w);
+        }
+
+        int[] topologicalSort() {
+            int[] inDegree = new int[V];
+            for (int u = 0; u < V; u++) {
+                for (int v : adj[u]) {
+                    inDegree[v]++;
+                }
+            }
+
+            java.util.Queue<Integer> q = new java.util.LinkedList<>();
+            for (int i = 0; i < V; i++) {
+                if (inDegree[i] == 0) {
+                    q.add(i);
+                }
+            }
+
+            int[] result = new int[V];
+            int count = 0;
+            while (!q.isEmpty()) {
+                int u = q.poll();
+                result[count++] = u;
+                for (int v : adj[u]) {
+                    if (--inDegree[v] == 0) {
+                        q.add(v);
+                    }
+                }
+            }
+
+            if (count != V) {
+                return null; // Cycle detected
+            }
+            return result;
+        }
     }
 
 
     public static void main(String[] args) {
-        int[] weights1 = {10, 12, 15, 14, 16, 20, 18};
-        int threshold1 = 2;
-        System.out.println("Max Train Length (Example 1): " + maxLengthTrain(weights1, threshold1)); // Output: 4
+        Course[] courses = {
+                new Course("A", 4, new String[0]),
+                new Course("B", 2, new String[]{"A"}),
+                new Course("C", 3, new String[]{"A"}),
+                new Course("D", 5, new String[]{"B", "C"})
+        };
 
-
-        int[] weights2 = {5, 10, 15, 20, 25};
-        int threshold2 = 1;
-        System.out.println("Max Train Length (Example 2): " + maxLengthTrain(weights2, threshold2)); // Output: 1
-
-        int[] weights3 = {1,3,5,7,9,11};
-        int threshold3 = 10;
-        System.out.println("Max Train Length (Example 3): " + maxLengthTrain(weights3, threshold3)); // Output: 6
-
-        int[] weights4 = {};
-        int threshold4 = 2;
-        System.out.println("Max Train Length (Example 4): " + maxLengthTrain(weights4, threshold4)); // Output: 0
-
-        int[] weights5 = {10};
-        int threshold5 = 2;
-        System.out.println("Max Train Length (Example 5): " + maxLengthTrain(weights5, threshold5)); //Output: 1
-
-
+        int[] result = solve(courses);
+        if(result != null) {
+            System.out.println("Minimum total duration: " + result[0]);
+            System.out.println("Optimal schedule order hashcode (for uniqueness): " + result[1]); //Use the hashcode to compare schedules efficiently
+        }
     }
 }
