@@ -60,3 +60,4 @@ OptimalPowerGridDesign
 OptimalRouteWithLimitedFuelStops
 OptimalCargoUnloadingWithConstraints
 OptimalTowerConstruction
+OptimalStadiumSeatingArrangement
