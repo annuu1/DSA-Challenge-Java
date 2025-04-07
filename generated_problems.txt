@@ -66,3 +66,4 @@ OptimalConvoyFormation
 OptimalTaskAssignmentWithDependenciesAndDeadlines
 OptimalResourceAllocationWithInterdependencies
 OptimalSubarrayColoring
+OptimalPowerLinePlacement
