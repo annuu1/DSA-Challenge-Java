@@ -70,3 +70,4 @@ OptimalPowerLinePlacement
 OptimalResourceAllocationWithThresholds
 OptimalBuildingComplexConstruction
 OptimalServerClusterFormation
+OptimalCircularTour
