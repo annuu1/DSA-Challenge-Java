@@ -69,3 +69,4 @@ OptimalSubarrayColoring
 OptimalPowerLinePlacement
 OptimalResourceAllocationWithThresholds
 OptimalBuildingComplexConstruction
+OptimalServerClusterFormation
