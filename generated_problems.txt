@@ -68,3 +68,4 @@ OptimalResourceAllocationWithInterdependencies
 OptimalSubarrayColoring
 OptimalPowerLinePlacement
 OptimalResourceAllocationWithThresholds
+OptimalBuildingComplexConstruction
